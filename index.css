@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    flex-shrink: 0;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.search-section{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.search-section input{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid #333;
+}
+.search-section button{
+    color: white;
+    background-color: rgb(63, 63, 63);
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.sorting{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 10px;
+}
+.sorting button{
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tabs{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: 50px;
+}
+.tabs button{
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.current-tab{
+    background-color: #333;
+    color: #ffffff;
+    
+}
+.page{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+}
+ 
+.page button{
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#movies{
+    margin-left: 60px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+i{
+    cursor: pointer;
+}
+
